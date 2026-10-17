@@ -251,7 +251,8 @@ input.bad,.grp.bad .chips{border-color:var(--hi)}
 }
 @media (max-width:820px){
   .hero{background:var(--bordo)}
-  .slides,.tint{inset:0 0 auto 0;height:52svh}
+  .slides,.tint,.hero::before,.hero .grainfix{inset:0 0 auto 0;height:52svh}
+  .slides{overflow:hidden;transform:none!important}
   .slide img{object-position:var(--fxm) 22%}
   .hero-in{padding-top:calc(52svh + 30px)}
   .down{display:none}
@@ -425,7 +426,7 @@ input.bad,.grp.bad .chips{border-color:var(--hi)}
 
       <div class="hp" aria-hidden="true"><label>Não preencha<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
 
-      <div class="fail" id="fail" role="alert">Não conseguimos enviar agora. Confira a sua internet e tente de novo. Se o problema continuar, fale com a <a id="failWpp" href="#gravacao">Secretaria Executiva</a>.</div>
+      <div class="fail" id="fail" role="alert">Não conseguimos enviar agora. Confira a sua internet e tente de novo. Se o problema continuar, fale conosco pelo <a id="failWpp" href="#gravacao">nosso WhatsApp</a>.</div>
 
       <div class="submitrow">
         <button class="btn solid" type="submit" id="send">Enviar minha ficha</button>
@@ -541,7 +542,7 @@ input.bad,.grp.bad .chips{border-color:var(--hi)}
     </div>
 
     <div class="send rv">
-      <div class="ticket"><span class="lab">9 · Envio</span><div class="d">Envie pelo WhatsApp da Secretaria Executiva.</div><p>Em caso de dúvida, fale com a Secretaria Executiva.</p></div>
+      <div class="ticket"><span class="lab">9 · Envio</span><div class="d">Envie pelo nosso WhatsApp.</div><p>Em caso de dúvida, fale conosco. Será um prazer recebê-la.</p></div>
       <a class="btn" id="wppBtn" href="#" hidden target="_blank" rel="noopener">Abrir o WhatsApp</a>
     </div>
   </div>
